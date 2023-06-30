@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link rel="icon" type="image/x-icon" href="assets/img/icon.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <link href="assets/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="assets/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/bootstrap.min4.css">
+  <link rel="stylesheet" href="assets/bootstrap.min3.css">
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/bootstrap.min341.js"></script>
+  <title>Centro de Ayuda</title>
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light " 
+    style="background: rgba(0, 0, 0, 0.6) !important; position: fixed; width: 100%;">
+    <a class="navbar-brand" href="#top"><img src="logo-iconn 2.svg" alt="" style="cursor: pointer;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center m-auto h-100" id="navbarNav" style="width: calc(100vw - 30px);
+      margin: auto;
+      position: absolute;
+      display: flex !important;
+      justify-content: center;
+      justify-items: center;">
+      <ul class="navbar-nav" style="height: 100%; align-items: center;">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio"><span class="activar">Inicio</span> <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="mapa.html"><span class="">Mapa institucional</span></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#preguntas"><span class="">Preguntas frecuentes</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#soporte"><span class="">Soporte técnico</span></a>
+        </li>
+      </ul>
+    </div>
+    <div style="display: block;width: 12px;"></div>
+  </nav>
+  <scroll-container id="top">
+    <div class="curva">
+      <img src="assets/img/portada.webp" alt="" class="portada">
+      <!-- <div class="portada" ></div> -->
+      <scroll-page id="inicio" class="contenido">
+        <div class="info">
+          <div class="d-flex justify-content-center align-items-center" style="color: white;text-align: center;">
+            <img src="assets/img/icon.webp" class="mr-4" alt="" style="min-height: 100px;line-height: 121.5%;
+            filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.62));">
+            <div class="titulo">CENTRO DE AYUDA</div>
+
+          </div>
+          <div class="container">
+            <video class="video" controls id="myVideo">
+              <source src="assets/videos/MIP 01062023.mp4" type="video/mp4" poster="portada_video.jpeg"/>
+  
+            </video>
+          </div>
+        </div>
+
+      </scroll-page>
+      <div class="curveado">
+        <img src="assets/img/Vector 1.svg" alt="">
+      </div>
+    </div>
+    <div class="container ">
+      <scroll-page id="preguntas">
+        <div class="Pf">
+          <div class="mb-4 sub" style="color: #f37721;">
+            Preguntas Frecuentes <img src="Vector.svg" alt=""></div>
+          <div class="container mt-5">
+            <button type="button"
+              class="d-flex justify-content-between align-content-center align-items-center pregunta border-bottom-0"
+              data-toggle="collapse" data-target="#demo">¿Cuáles son los niveles y roles del Modelo Institucional?
+              <img class="imgChange" src="iconMasVerde.svg" alt="">
+            </button>
+            <div id="demo" class="collapse" style="background: #008060;padding-left: 40px;padding-right: 40px;">
+              <div class="card card-body pl-0 pr-0 pb-5" style="background: #008060;">
+                <div class="">
+                  <a href="assets/img/pregunta1.webp" target="_blank">
+                    <img src="assets/img/pregunta1.webp" alt="" class="imagenP w-50 m-auto">
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="card card-body pl-0 pr-0" style="background: #008060;">
+                    <div class="border-left">
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      </p>
+                    </div>
+                  </div> -->
+            </div>
+
+            <button type="button"
+              class="d-flex justify-content-between align-content-center align-items-center pregunta border-bottom-0"
+              data-toggle="collapse" data-target="#demo1">¿Cómo puedo cambiar los niveles 1 y 2 de procesos?
+              <img class="imgChange" src="iconMasVerde.svg" alt="">
+            </button>
+            <div id="demo1" class="collapse" style="background: #008060;padding-left: 40px;padding-right: 40px;">
+              <div class="card card-body pl-0 pr-0 pb-5" style="background: #008060;">
+                <div class="border-left">
+                  <p style="text-align: justify;">Los niveles 1 y 2 solo pueden ser cambiados por el Sponsor y Dueño de
+                    Procesos a través de la estrategia de la organización.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button type="button"
+              class="d-flex justify-content-between align-content-center align-items-center pregunta border-bottom-0"
+              data-toggle="collapse" data-target="#demo2">¿Qué es BPM?
+              <img class="imgChange" src="iconMasVerde.svg" alt="">
+            </button>
+            <div id="demo2" class="collapse" style="background: #008060;padding-left: 40px;padding-right: 40px;">
+              <div class="card card-body pl-0 pr-0 pb-5" style="background: #008060;">
+                <div class="row ">
+                  <div class="col-md-6">
+                    <a href="assets/img/pregunta3.webp" target="_blank">
+                      <img src="assets/img/pregunta3.webp" alt="" class="imagenP">
+                    </a>
+                  </div>
+                  <div class="col-md-6 border-left">
+                    <div class="d-flex h-100 align-items-center">
+                      <div>
+                        <p class="" style="text-align: justify;">BPM (Business Process Management), es una disciplina,
+                          que tiene como fin mejorar los procesos de negocio que sustentan la operación de las
+                          organizaciones.</p>
+                        <p>Se basa en un ciclo de mejora continua compuesto de 6 etapas:​</p>
+                        <ul>
+                          <li>Estrategia y Planeación ​</li>
+                          <li>Análisis y Descubrimiento​</li>
+                          <li>Diseño y Modelado​</li>
+                          <li>Implementación​</li>
+                          <li>Monitoreo y Control​</li>
+                          <li>Optimización y Mejora</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button"
+              class="d-flex justify-content-between align-content-center align-items-center pregunta border-bottom-0"
+              data-toggle="collapse" data-target="#demo3">¿Qué es BPMN 2.0 en ICONN?
+              <img class="imgChange" src="iconMasVerde.svg" alt="">
+            </button>
+            <div id="demo3" class="collapse" style="background: #008060;padding-left: 40px;padding-right: 40px;">
+              <div class="card card-body pl-0 pr-0 pb-5" style="background: #008060;">
+                <div class="border-left">
+                  <p style="text-align: justify;">La metodología BPMN por sus siglas (Business Process Model and
+                    Notation) es un estándar internacional que se creó con la finalidad de proporcionar una notación de
+                    modelado intuitiva y de fácil comprensión para los usuarios.
+                  </p>
+                  <p style="text-align: justify;">Incorporamos las mejores prácticas que nos marca BPMN y las adoptamos
+                    a las necesidades de ICONN, estableciendo los objetos de modelado y repositorios necesarios,
+                    cuidando la integridad de los diagramas, dando claridad y flexibilidad en su uso, marcando las
+                    reglas a través de nuestra Metodología de Procesos ICONN.</p>
+                </div>
+              </div>
+            </div>
+
+            <button type="button"
+              class="d-flex justify-content-between align-content-center align-items-center pregunta border-bottom-0"
+              data-toggle="collapse" data-target="#demo4">¿Cuáles son los elementos de la metodología BPMN?
+              <img class="imgChange" src="iconMasVerde.svg" alt="">
+            </button>
+            <div id="demo4" class="collapse" style="background: #008060;padding-left: 40px;padding-right: 40px;">
+              <div class="card card-body pl-0 pr-0 pb-5" style="background: #008060;">
+                <div class="">
+                  <a href="assets/img/pregunta5.webp" target="_blank">
+                    <img src="assets/img/pregunta5.webp" alt="" class="imagenP w-50 m-auto">
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+            <button type="button"
+              class="d-flex justify-content-between align-content-center align-items-center pregunta border-bottom-0"
+              data-toggle="collapse" data-target="#demo5">¿Cuáles y cómo son las compuertas?
+              <img class="imgChange" src="iconMasVerde.svg" alt="">
+            </button>
+            <div id="demo5" class="collapse" style="background: #008060;padding-left: 40px;padding-right: 40px;">
+              <div class="card card-body pl-0 pr-0 pb-5" style="background: #008060;">
+                <div class="row ">
+                  <div class="col-md-6">
+                    <a href="assets/img/pregunta6.webp" target="_blank">
+
+                      <img src="assets/img/pregunta6.webp" alt="" class="imagenP">
+                    </a>
+                  </div>
+                  <div class="col-md-6 border-left">
+                    <div class="d-flex h-100 align-items-center">
+                      <p class="" style="text-align: justify;">Las compuertas son puntos de decisión que pueden ajustar
+                        la ruta de un flujo según ciertas condiciones.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button"
+              class="d-flex justify-content-between align-content-center align-items-center pregunta border-bottom-0"
+              data-toggle="collapse" data-target="#demo6">¿Qué representan las carpetas que vienen en la sección
+              izquierda de la pantalla?
+              <img class="imgChange" src="iconMasVerde.svg" alt="">
+            </button>
+            <div id="demo6" class="collapse" style="background: #008060;padding-left: 40px;padding-right: 40px;">
+              <div class="card card-body pl-0 pr-0 pb-5" style="background: #008060;">
+                <div class="border-left">
+                  <p style="text-align: justify;">En el lado izquierdo se visualizan las carpetas que cuentan con los
+                    modelos de procesos de diferentes iniciativas que ayudan a mantener la información organizada y
+                    estructurada.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div style="border-bottom: 1px solid #AAB5C3;"></div>
+          </div>
+      </scroll-page>
+    </div>
+    </div>
+    <scroll-page id="soporte">
+      <div class="d-flex align-items-center" style="position: relative;">
+        <div class="d-flex " style="background-color: #EFEFEF; height: 80%;
+          position: absolute;
+          right: 0;
+          left: 0;">
+        </div>
+        <div class="container parrafo">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="jVYuTXcc.webp" alt="" class="w-100">
+            </div>
+            <div class="col-md-6">
+              <span style="color:#008060;" class="ayuda mb-2">¿Necesitas ayuda?</span>
+              <p>Ponte en contacto con nosotros</p>
+              <!-- <div class="row mb-2">
+                    <div class="col-12">
+                      <p class="mb-1" style="font-weight: 600;">María M. N.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-center borderI contacto">
+                        <img src="Vector (1).svg" alt="" class="mr-2">
+                        <p class="mb-0 ml-2"><u>maria@iconn.com.mx</u></p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-center contacto">
+                        <img src="Vector (2).svg" alt="" class="mr-2">
+                        <p class="mb-0 ml-2">+56 123 456 78</p>
+                      </div>
+                    </div>
+                  </div> -->
+              <div class="row">
+                <div class="col-12">
+                  <p class="mb-1" style="font-weight: 600;">Soporte Tecnológico</p>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex align-items-center borderI contacto">
+                    <img src="Vector (1).svg" alt="" class="mr-2">
+                    <p class="mb-0 ml-2"><span style="font-weight: 600;text-decoration: none">Heriberto J. López: </span><a href="mailto:heriberto.lopez@iconn.com.mx"
+                        style="text-decoration:none;"><u>jose.salazar@iconn.com.mx</u></a></p>
+                  </div>
+                  <div class="d-flex align-items-center borderI contacto">
+                    <img src="Vector (1).svg" alt="" class="mr-2">
+                    <p class="mb-0 ml-2"><span style="font-weight: 600;text-decoration: none">José A. Salazar: </span><a href="mailto:heriberto.lopez@iconn.com.mx"
+                        style="text-decoration:none;"><u>heriberto.lopez@iconn.com.mx</u></a></p>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <p class="mb-1" style="font-weight: 600;">Arquitectura</p>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex align-items-center borderI contacto">
+                    <img src="Vector (1).svg" alt="" class="mr-2">
+                    <p class="mb-0 ml-2"><span style="font-weight: 600;text-decoration: none">Gustavo Gutierrez: </span><a href="mailto:gustavo.gutierrez@iconn.com.mx"
+                        style="text-decoration:none;"><u>gustavo.gutierrez@iconn.com.mx</u></a></p>
+                  </div>
+                  <div class="d-flex align-items-center borderI contacto">
+                    <img src="Vector (1).svg" alt="" class="mr-2">
+                    <p class="mb-0 ml-2"><span style="font-weight: 600;text-decoration: none">Viviana Ortiz: </span><a href="mailto:viviana.ortiz@iconn.com.mx"
+                        style="text-decoration:none;"><u>viviana.ortiz@iconn.com.mx</u></a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mt-4">
+                <div class="conG">¡Con gusto resolveremos tus dudas!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </scroll-page>
+    <div class="container margen">
+      <form action="" id="myForm" action="/guardar" method="post">
+        <h1 class="text-center mb-5 sub" style="color: #f37721;">¿Cómo valorarías tu experiencia?</h1>
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-3">
+            <div for="inputPassword5" class="form-label">Ingresa tu correo electrónico:</div>
+          </div>
+          <div class="col-md-9">
+            <input type="email" id="email" class="form-control" aria-describedby="passwordHelpBlock">
+          </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-3">
+            <div for="inputPassword5" class="form-label">Déjanos tu calificación:</div>
+          </div>
+          <div class="col-md-9">
+            <p class="clasificacion">
+              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+              --><label for="radio1">★</label><!--
+              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+              --><label for="radio2">★</label><!--
+              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+              --><label for="radio3">★</label><!--
+              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+              --><label for="radio4">★</label><!--
+              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+              --><label for="radio5">★</label>
+            </p>
+          </div>
+        </div>
+        <div class="d-flex mb-3 align-items-center">
+          <div for="inputPassword5" class="form-label">¿Hay algo más que podamos hacer para mejorar este sitio?</div>
+        </div>
+
+        <textarea class="w-100 form-control" name="" id="opinion" cols="30" rows="10"></textarea>
+        <div class="d-flex justify-content-end mt-4">
+          <button class="btn btn-primary" type="submit" value="Guardar">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </scroll-container>
+  <script src="script.js">
+    window.addEventListener("scroll", verificarSeccionVisible);
+  </script>
+</body>
+
+</html>

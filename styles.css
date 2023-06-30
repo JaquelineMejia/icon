@@ -1,0 +1,489 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Sen:wght@700&display=swap'); */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('assets/fonts/Montserrat/static/Montserrat-Light.ttf') ;
+  
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('assets/fonts/Montserrat/static/Montserrat-Regular.ttf') ;
+  
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('assets/fonts/Montserrat/static/Montserrat-Medium.ttf') ;
+  
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf') ;
+  
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('assets/fonts/Montserrat/static/Montserrat-Bold.ttf') ;
+  
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url('assets/fonts/Sen/Sen-Bold.ttf') ;
+  
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf') ;
+  
+}
+body {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+  
+
+  .navbar {
+    height: 80px;
+    z-index: 20;
+    font-family: 'Plus Jakarta Sans';
+  }
+  
+  .titulo{
+    font-family: 'Sen';
+    font-weight: 700;
+font-size: 101px;
+line-height: 121.5%;
+filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.62));
+  }
+  .titulo2{
+    font-family: 'Montserrat';
+    font-weight: 400;
+font-size: 53.6538px;
+line-height: 121.5%;
+letter-spacing: 0.015em;
+filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.62));
+  }
+  .video{
+    margin: 10% auto 10% auto;
+    display: block;
+    border-radius: 15px;
+    position: relative;
+    z-index: 3;
+    max-height: 80vh;
+    max-width: 100%;
+  }
+  /* video{
+    height: auto;
+    width: 100%;
+  } */
+  .Pf{
+    /* margin-top: 5%;  */
+    font-family: 'Montserrat';
+    margin-bottom: 15%;
+    position: relative;
+    /* border-bottom: 1px solid green; */
+  }
+  .verde{
+    color: #008060;
+  }
+  button:focus {
+    outline: none !important; 
+    outline: none !important;}
+  .pregunta{
+    font-family: 'Montserrat';
+    padding: 25px 50px 25px 50px;
+    border-top: 1px solid #AAB5C3;
+    background:transparent;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 121.5%;
+    color: #008060;
+    height: 100px;
+    text-align: inherit;
+  }
+  .pregunta:hover{
+    background: #F5F5F5;
+    cursor: pointer;
+  }
+  .no-hover:hover {
+    background: #008060;
+    cursor: auto;
+  }
+  .dropdown-container {
+    font-size: 14px;
+  }
+  .color-clic {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #008060; /* Cambia el color de fondo según tu preferencia */
+  }
+
+  .dropdown-btn {
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ebcb8b;
+    color: #2e3440;
+    border-radius: 5px;
+  }
+  
+  .dropdown-btn.dropdown-triangle::after {
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #2e3440;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: none;
+    content: "";
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    width: 100px;
+    background-color: #ebcb8b;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+  }
+  
+  .dropdown-item {
+    display: block;
+    height: 36px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 36px;
+    color: #2e3440;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .dropdown-show {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  
+  .dropdown-item:first-child {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .dropdown-item:last-child {
+    border-radius:0 0 5px 5px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #d8dee9;
+  }
+  .clasificacion{
+    font-size: 30px;
+    direction: rtl;/* right to left */
+    unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+  font-family: 'Montserrat';
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 30px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: #FFC700;
+}
+
+input[type="radio"]:checked ~ label {
+  color: #FFC700;
+}
+.nav-link  {
+  color: white !important;
+}
+.nav-item {
+  font-weight: 500;
+font-size: 20.1143px;
+line-height: 150%;
+font-family: 'Plus Jakarta Sans';
+}
+.activar {
+  border-bottom: 1px solid white;
+  font-weight: 600;
+}
+.item {
+  margin-bottom: 10px;
+}
+
+.header {
+  background-color: #eee;
+  padding: 10px;
+  cursor: pointer;
+}
+.item .content {
+  display: none;
+}
+
+.item.active .content {
+  display: block;
+}
+.content {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+.navbar-brand {
+  height: auto !important;
+  z-index: 2;
+}
+.collapse{
+  font-family: 'Montserrat';
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 121.5%;
+    letter-spacing: 0.015em;
+}
+/* #demo, #demo2, #demo3, #demo4, #demo5{
+  padding: 25px 10px 25px 10px
+} */
+.border-left{
+  border-left: 2px solid #FFFFFF;
+  padding-left: 30px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  line-height: 121.5%;
+  /* or 24px */
+
+  letter-spacing: 0.015em;
+}
+.card{
+  border: none !important;
+}
+.imagenP {
+  
+    background-size: auto;
+    background-position: center center;
+    /* width: 100%; */
+    width : 100%;
+    display: block;
+  /* Otros estilos */
+}
+.curveado{
+  position: absolute;
+  width: 100%;
+  bottom: -35%;
+  height: 90%;
+}
+.curveado img{
+  width: 100%;
+  height: 100%;
+}
+.curva{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 30%;
+}
+.portada{
+  width: 100%;
+  height: 75%; 
+  background: #008060;
+
+  background-attachment: fixed;
+}
+.contenido{
+  top: 0;
+  width: 100%;
+  height: calc(100vh + 80px);
+  position: absolute;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  z-index: 3;
+
+  /* margin-bottom: 20%; */
+}
+@media (max-width: 600px) {
+  /* Agrega aquí los estilos que deseas aplicar en pantallas pequeñas */
+}
+
+/* Estilos para pantallas entre 601px y 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .curva{
+    height: 55vh;
+  }
+  /* Agrega aquí los estilos que deseas aplicar en pantallas medianas */
+}
+
+/* Estilos para pantallas más grandes que 901px */
+@media (min-width: 901px) {
+  /* Agrega aquí los estilos que deseas aplicar en pantallas grandes */
+}
+@media (width:700px) {
+  
+}
+.navbar {
+  border-radius: 0px !important; 
+}
+.sub{
+  font-weight: 600;
+font-size: 40px;
+line-height: 121.5%;
+letter-spacing: 0.015em;
+font-family: 'Montserrat';
+
+}
+.ayuda{
+  font-size: 30px;
+  line-height: 121.5%;
+  letter-spacing: 0.015em;
+  font-weight: 700;
+  display: flex;
+}
+.borderI{
+  border-left: 1px solid #AAB5C3;
+}
+.contacto{
+  padding: 5px 16px;
+}
+.parrafo p{
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Montserrat';
+
+letter-spacing: 0.015em;
+}
+.parrafo p span{
+  text-decoration: underline;
+  font-family: 'Montserrat';
+}
+.form-label{
+  color: #000000;
+}
+.conG{
+  font-weight: 500;
+  color: #EC702E;
+font-size: 18px;
+
+}
+.btn-primary {
+  color: #fff;
+  background-color: #F37721 !important;
+  border-color: #F37721 !important;
+  font-style: normal;
+font-weight: 600 !important;
+font-size: 20px !important;
+line-height: 121.5%;
+font-family: 'Montserrat';
+}
+.info{
+  margin-top: 10%;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+.margen{
+  margin-top: 12%;
+  margin-bottom: 10%;
+}
+
+
+/* #myVideo::-webkit-media-controls-play-button {
+  background-color: #6c1f1f;
+  color: #999;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+#opinion{
+  border-radius: 20px;
+  /* border: 1px solid #ccc; */
+}
+#email{
+  border-radius: 8px;
+}
+a:link, a:visited, a:active {
+  color: #000000;
+}
+small{
+  font-size: 13px !important;
+}
+.thevideo{margin: 30px 0; position: relative;}
+        .thevideo .txt-cont{background-color: rgba(0, 0, 0, .5); width: 100%; height: 98%; display: block; position: absolute; top: 0; left: 0;}
+        .thevideo .txt-video{position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); text-align:center;}
+        .thevideo h1, .thevideo p{color:white;}
+        .thevideo .txt-video button{background-color: transparent; border:none; color: white; font-size: 30px;; padding: 5px 40px; transition: .5s;}
+        .thevideo .txt-video button:hover{background-color: rgba(255, 0, 0, .5); border-radius: 50px; cursor: pointer;}
